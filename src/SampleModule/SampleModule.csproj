@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <OutputPath>$(MSBuildThisFileDirectory)\..\OutputSample\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CodeWF.AspNetCore.Core\CodeWF.AspNetCore.Core.csproj" />
+    <ProjectReference Include="..\SampleEventBus\SampleEventBus.csproj" />
+  </ItemGroup>
+
+</Project>

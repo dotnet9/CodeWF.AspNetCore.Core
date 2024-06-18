@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
+		<Company>https://codewf.com</Company>
+		<Authors>沙漠尽头的狼</Authors>
+		<Owners>https://codewf.com</Owners>
+		<AssemblyVersion>$(Version)</AssemblyVersion>
+		<FileVersion>$(Version)</FileVersion>
+		<Version>1.0.0</Version>
+		<Description>一个简易的ASP.NET Core核心库，支持模块化开发</Description>
+		<ApplicationIcon>Resources\logo.ico</ApplicationIcon>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>$(AssemblyName)</Title>
+		<Copyright>Copyright © https://codewf.com 2024</Copyright>
+		<AssemblyName>$(AssemblyName)</AssemblyName>
+		<RootNamespace>$(AssemblyName)</RootNamespace>
+		<PackageId>$(AssemblyName)</PackageId>
+		<PackageTags>ASP.NET Core;Modules;</PackageTags>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageProjectUrl>https://github.com/dotnet9/$(AssemblyName)</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/dotnet9/$(AssemblyName)</RepositoryUrl>
+		<OutputPath>$(MSBuildThisFileDirectory)\..\OutputPackages\</OutputPath>
+	</PropertyGroup>
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="Resources\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+</Project>
